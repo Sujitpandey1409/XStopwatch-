@@ -17,10 +17,10 @@ const FullNameDisplay = () => {
       <h1>Full Name Display</h1>
       <form onSubmit={handleSubmit} className="form">
         <label htmlFor="Fname">First Name</label>
-        <input id="Fname" onChange={(e) => {setFname(e.target.value)}}></input>
+        <input type="text" id="Fname" onChange={(e) => {setFname(e.target.value)}}></input>
         <label htmlFor="Lname">Last Name</label>
-        <input id="Lname" onChange={(e) => {setLname(e.target.value)}}></input>
-        <button onClick={handleSubmit}>Submit</button>
+        <input type="text" id="Lname" onChange={(e) => {setLname(e.target.value)}}></input>
+        <button type="submit" onClick={handleSubmit}>Submit</button>
       {fullName && <>Full Name :{fullName}</> }
       </form>
     </div>
