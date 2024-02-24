@@ -1,0 +1,11 @@
+.navbar{
+    width: 100vw;
+    height: 20px;
+    background-color: rgb(240, 248, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar p{
+    cursor: pointer;
+}
