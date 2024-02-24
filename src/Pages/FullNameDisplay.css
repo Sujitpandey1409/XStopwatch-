@@ -1,0 +1,32 @@
+.formContainer{
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    /* border: 1px solid gray; */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    .form{
+        background-color: aliceblue;
+        flex-direction: column;
+        padding: 10px;
+        display: flex;
+        height: 200px;
+        width: 200px;
+        border-radius: 7px;
+        /* border: 1px solid rgba(128, 128, 128, 0.654); */
+        box-shadow: 0px 20px 40px rgba(128, 128, 128, 0.654);
+    }
+    .form:hover{
+        box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.654);
+        background-color: rgba(240, 248, 255, 0.726);
+    }
+    .buttonContainer{
+        margin-top: 20px;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        gap:10px
+    }
+}

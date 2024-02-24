@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Stopwatch.css'
 
 const Stopwatch = () => {
-    const [isStart, setIsStart] = useState(true)
+    const [isStart, setIsStart] = useState(false)
     const [time, setTime] = useState(0)
     useEffect(()=>{
         let timerId;
