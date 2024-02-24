@@ -22,8 +22,7 @@ const FullNameDisplay = () => {
         <input type="text" id="Lname" onChange={(e) => {setLname(e.target.value)}}></input>
         <button type="submit" onClick={handleSubmit}>Submit</button>
       </form>
-      <br />
-      {fullName && <>Full Name: {fullName}</> }
+      {fullName && <div className="form">Full Name: {fullName}</div> }
     </div>
   );
 };
