@@ -7,6 +7,7 @@ const Nav = () => {
     <div className="navbar">
       <p onClick={()=>{Navigate('/')}} >Stopwatch</p>
       <p onClick={()=>{Navigate('/displayName')}} >DisplayName</p>
+      <p onClick={()=>{Navigate('/CounterApp')}} >CounterApp</p>
     </div>
   );
 };
