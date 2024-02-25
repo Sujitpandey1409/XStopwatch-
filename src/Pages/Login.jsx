@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './Login.css'
 
 const LogIn = () => {
   const [isLogged, setIsLogged] = useState(false);
@@ -16,7 +17,7 @@ const LogIn = () => {
     }
   };
   return (
-    <div className="form-container">
+    <div className="formContainer">
       <h1>Login Page</h1>
       {!validCredentials && <p>Invalid username or password</p>}
       {!isLogged ? (
