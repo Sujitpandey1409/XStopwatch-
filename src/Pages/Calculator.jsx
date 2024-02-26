@@ -23,7 +23,7 @@ return (
     <div className="calculatorContainer">
         <h1>React Calculator</h1>
         <input type='text' value={inputVal} />
-        {result && <p>{result}</p>}
+        {result && <div className='resultContainer'>{result}</div>}
         <div onClick={handleClick} className="keysContainer">
             {calciKeys.map((el, i) => <CaclciKey key={i} keys={el} />)}
         </div>
