@@ -88,7 +88,8 @@ const States = () => {
           })}
         </select>
       )}
-      {currentState&&currentCountry&&currentCity&&<p><span className="cityState"> You Selected <b style={{fontSize:'33px'}}>{currentCity}</b>,</span> {currentState}, {currentCountry}</p>}
+      {/* {currentState&&currentCountry&&currentCity&&<p><span className="cityState"> You Selected <b style={{fontSize:'33px'}}>{currentCity}</b>,</span> {currentState}, {currentCountry}</p>} */}
+      {currentState&&currentCountry&&currentCity&&<p>You Selected {currentCity}, {currentState}, {currentCountry}</p>}
     </div>
   );
 };
