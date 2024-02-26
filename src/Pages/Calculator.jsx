@@ -15,7 +15,7 @@ const Calculator = () => {
         if(calciKeys.join().includes(keyVal)){
         if (!(operator.includes(keyVal) && inputVal[inputVal.length - 1] === keyVal)) {
             if (keyVal === 'C') { console.log('C clicked', inputVal); setInputVal((inputVal) => inputVal = ''); setResult()}
-            else if (keyVal === '=') { console.log('= clicked'); inputVal && setResult(eval(inputVal)) }
+            else if (keyVal === '=') { console.log('= clicked'); inputVal ? setResult(eval(inputVal)): setResult('Error Expression, please check!') }
             else { setInputVal((inputVal) => inputVal + keyVal); console.log(inputVal + keyVal); }
         }}
     }
