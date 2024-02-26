@@ -7,6 +7,7 @@ import Nav from "./Components/Navbar";
 import Counter from "./Pages/Counter";
 import LogIn from "./Pages/Login";
 import Calculator from "./Pages/Calculator";
+import States from "./Pages/XStates";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/CounterApp' element={<Counter />}/>
         <Route path='/XLogin' element={<LogIn />}/>
         <Route path='/XCalculator' element={<Calculator />}/>
+        <Route path='/XStates' element={<States />}/>
       </Routes>
     </div>
     </>
