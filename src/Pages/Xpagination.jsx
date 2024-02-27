@@ -16,6 +16,7 @@ const Xpagination = () => {
         setPageData((pageData) => response.data.slice(0, 10));
       } catch (e) {
         console.error(e);
+        alert(e)
       }
     };
     fetchData();
