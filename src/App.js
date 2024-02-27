@@ -8,6 +8,7 @@ import Counter from "./Pages/Counter";
 import LogIn from "./Pages/Login";
 import Calculator from "./Pages/Calculator";
 import States from "./Pages/XStates";
+import XCountriesSearch from "./Pages/XCountriesSearch";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/XLogin' element={<LogIn />}/>
         <Route path='/XCalculator' element={<Calculator />}/>
         <Route path='/XStates' element={<States />}/>
+        <Route path='/XCountriesSearch' element={<XCountriesSearch />}/>
       </Routes>
     </div>
     </>

@@ -1,0 +1,20 @@
+.searchApp{
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.searchApp input{
+    position: relative;
+    width: 70%;
+    top: 120px;
+    padding: 5px;
+}
+.card-container{
+    padding: 40px;
+    margin: 90px 60px;
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
