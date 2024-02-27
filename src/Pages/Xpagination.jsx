@@ -12,10 +12,8 @@ const Xpagination = () => {
         const response = await axios.get(
           "https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json"
         );
-        console.log(response.data);
         setTableData(response.data);
         setPageData((pageData) => response.data.slice(0, 10));
-        console.log(pageData);
       } catch (e) {
         console.error(e);
       }
@@ -23,29 +21,29 @@ const Xpagination = () => {
     fetchData();
   }, []);
   const handleNext = () => {
+    if (!tableData) return;
     const current_page = pageNo + 1;
     const current_page_data = tableData.slice(pageNo * 10, current_page * 10);
     if (current_page_data.length) {
-        console.log(current_page_data);
       setPageData(current_page_data);
       setPageNo((pageNo) => pageNo + 1);
     }
-
-    console.log(pageNo);
   };
   const handlePrevious = () => {
+    if (!tableData) return;
     const current_page = pageNo - 1;
-    const current_page_data = tableData.slice((current_page-1) * 10, current_page * 10);
-    if (current_page>0) {
-        console.log(current_page_data);
+    const current_page_data = tableData.slice(
+      (current_page - 1) * 10,
+      current_page * 10
+    );
+    if (current_page > 0) {
       setPageData(current_page_data);
       setPageNo((pageNo) => pageNo - 1);
     }
-    console.log(current_page);
   };
   return (
     <div className="PaginationApp">
-        <h1>Employee Data Table</h1>
+      <h1>Employee Data Table</h1>
       {pageData && <Table pageData={pageData} />}
       <div className="buttonContainer">
         <button onClick={handlePrevious}>Previous</button>
