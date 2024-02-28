@@ -41,7 +41,7 @@ const XWeatherApp = () => {
       {isLoading && <p>Loading data...</p>}
       {/* {weatherData&&<div className="weatherCardContainer"><WeatherCard weatherData={weatherData} /></div>} */}
       {weatherData && (
-        <div className="weather-card">
+        <div className="weather-cards">
           {weatherData.map((el, i) => {
             return <WeatherCard key={i} title={el.title} value={el.value} />;
           })}
