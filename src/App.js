@@ -10,6 +10,7 @@ import Calculator from "./Pages/Calculator";
 import States from "./Pages/XStates";
 import XCountriesSearch from "./Pages/XCountriesSearch";
 import Xpagination from "./Pages/Xpagination";
+import XWeatherApp from "./Pages/XWeatherApp";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/XStates' element={<States />}/>
         <Route path='/XCountriesSearch' element={<XCountriesSearch />}/>
         <Route path='/XPagination' element={<Xpagination />}/>
+        <Route path="/XWeatherApp" element={<XWeatherApp/>}/>
       </Routes>
     </div>
     </>
