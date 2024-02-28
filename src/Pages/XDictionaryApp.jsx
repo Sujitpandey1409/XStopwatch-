@@ -21,7 +21,7 @@ const XDictionaryApp = () => {
             if(meaning.length){setDefinition(meaning[0].meaning)}
             else{setDefinition('Word not found in the dictionary.')}
         }
-        else{setDefinition()} 
+        else{setDefinition('Word not found in the dictionary.')} 
     }
 
     return ( 
