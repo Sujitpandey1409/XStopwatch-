@@ -8,9 +8,9 @@ const SpellCheckApp = () => {
     fot: "for",
     exampl: "example",
   };
-  handleInputChange = (e) => {
+  const handleInputChange = (e) => {
     const text = e.target.value;
-    this.setState({ inputText: text });
+    setInputText(text);
 
     // Implement a basic spelling check and correction
     const words = text.split(" ");
