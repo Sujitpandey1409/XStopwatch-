@@ -12,6 +12,7 @@ import XCountriesSearch from "./Pages/XCountriesSearch";
 import Xpagination from "./Pages/Xpagination";
 import XWeatherApp from "./Pages/XWeatherApp";
 import SpellCheckApp from "./Pages/SpellCheckApp";
+import XDictionaryApp from "./Pages/XDictionaryApp";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/XPagination' element={<Xpagination />}/>
         <Route path="/XWeatherApp" element={<XWeatherApp/>}/>
         <Route path="/XSpellCheckApp" element={<SpellCheckApp/>} />
+        <Route path="/XDictionaryApp" element={<XDictionaryApp/>} />
       </Routes>
     </div>
     </>
