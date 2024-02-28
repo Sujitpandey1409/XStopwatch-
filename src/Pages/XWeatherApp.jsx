@@ -22,6 +22,7 @@ const XWeatherApp = () => {
       ]);
     } catch (e) {
       console.error(e);
+      setWeatherData()
       alert("Failed to fetch weather data");
     }
     setIsloading(false);
