@@ -14,7 +14,7 @@ body{
     gap: 10px;
 }
 
-.weatherCardContainer {
+.weather-card {
     display: flex;
     gap: 40px;
 }
