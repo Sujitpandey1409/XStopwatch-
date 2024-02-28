@@ -19,7 +19,7 @@ const XDictionaryApp = () => {
             const meaning = dictionaryData.filter((el)=> el.word.toLowerCase()===inputText.toLowerCase())
             console.log('meaning', meaning);
             if(meaning.length){setDefinition(meaning[0].meaning)}
-            else{setDefinition('Word not found in the dictionary')}
+            else{setDefinition('Word not found in the dictionary.')}
         }
         else{setDefinition()} 
     }
