@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './XModal.css'
 
 function XModal() {
@@ -10,6 +10,7 @@ function XModal() {
     phone: ''
   });
   const [error, setError] = useState('');
+  const modalRef = useRef(null);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -62,7 +63,7 @@ function XModal() {
       <button onClick={() => {setShowModal(true); console.log(showModal);}}>Open Form</button>
       {showModal && (
         <div className="modal">
-          <div className="modal-content">
+          <div className="modal-content" ref={modalRef}>
             <span className="close" onClick={() => setShowModal(false)}>&times;</span>
             <h2>Fill Details</h2>
             <form>
