@@ -44,6 +44,18 @@ function XModal() {
     setError('');
     setShowModal(false);
   };
+  const handleClickOutsideModal = (e) => {
+    if (modalRef.current && !modalRef.current.contains(e.target)) {
+      setShowModal(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutsideModal);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutsideModal);
+    };
+  }, []);
 
   return (
     <div >
