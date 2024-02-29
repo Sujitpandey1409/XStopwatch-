@@ -17,6 +17,7 @@ const Nav = () => {
       <p onClick={()=>{Navigate('/XSpellCheckApp')}} >XSpellCheckApp</p>
       <p onClick={()=>{Navigate('/XDictionaryApp')}} >XDictionaryApp</p>
       <p onClick={()=>{Navigate('/XTable')}} >XTable</p>
+      <p onClick={()=>{Navigate('/XModal')}} >XModal</p>
     </div>
   );
 };

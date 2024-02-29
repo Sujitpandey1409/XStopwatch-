@@ -14,6 +14,7 @@ import XWeatherApp from "./Pages/XWeatherApp";
 import SpellCheckApp from "./Pages/SpellCheckApp";
 import XDictionaryApp from "./Pages/XDictionaryApp";
 import XTable from "./Pages/XTable";
+import XModal from "./Pages/XModal";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/XSpellCheckApp" element={<SpellCheckApp/>} />
         <Route path="/XDictionaryApp" element={<XDictionaryApp/>} />
         <Route path="/XTable" element={<XTable/>} />
+        <Route path="/XModal" element={<XModal/>} />
       </Routes>
     </div>
     </>
